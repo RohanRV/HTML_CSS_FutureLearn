@@ -1,0 +1,151 @@
+/*
+  Futurelearn CSS Exercise C2.6 
+*/
+
+/*
+  You're going to finish the styling for the restaurant website that we worked on before, by writing CSS. This is a slightly updated version of the code you wrote in a previous step. 
+
+  You've been left some instructions within the code. The instructions are like a puzzle: they each get a little harder, and each builds on the knowledge you have before, and from the course so far. You've should have a PDF from the Futurelearn site showing you what the final output should look like.
+
+  Some initial styles have been provided below. Scroll down to "START FOLLOWING INSTRUCTIONS HERE!", to find the rest of the instructions.
+
+*/
+
+body {
+  background: olive;
+}
+
+.sample-map {
+  width: 100%;
+  background: pink;
+  height: 200px;
+}
+
+.container {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+figure {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+figure img {
+  width: 100%;
+}
+
+/*
+ * ----------------------------------
+ * START FOLLOWING INSTRUCTIONS HERE!
+ * ----------------------------------
+ */
+
+h1,h2,h3 {
+  /* 
+     1. There are three types of heading on the page: h1, h2, h3. They all need centering on the page. 
+     This selector targets them all! On the next line after the comment ends, before the curly brace,  write a declaration to set the 'text-align' property of all of them to 'center' */
+ text-align: center;
+}
+
+/* 
+    2. The menu itself needs centering. It is the only table element on the page. 
+    Write a CSS rule below to target the selector 'table'. 
+    In the rule, set the property "margin" to "0 auto". 
+    (This shorthand sets the top/bottom to 0, and the left/right to 'auto') */
+table{
+  margin: 0 auto;
+}
+
+
+/* 
+  3. The menu items are a bit squashed. Add 'padding' to the table items. 
+     Write a rule after this comment to target the selector 'td', and set the property "padding" to "5px". This will add 5px of padding on all sides. */
+table tr td{
+  padding: 5px;
+}
+
+/* 
+  4. The caption of the image should be white text on a dark green background, with some padding around it. Find the HTML element in the code above containing the caption for the image; then, beneath this comment write a rule targetting this element.
+
+  Your rule should set the following properties:
+  background: darkgreen;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;  
+
+  Write the rule after this comment.
+*/
+figcaption{
+  color: white;
+  padding:; 10px;
+  font-size: 14px;
+  font-stylr: italic;
+  background: darkgreen;
+}
+
+
+.contact-details {
+  /*  
+    5. This rule targets any element with the class 'contact-details.'
+  
+    We need to make the three divs inside the contact details into three columns. We can do this with what is known in CSS as 'flexbox' layout.
+  
+    Write a declaration inside this rule, after this comment, to set the property 'display' to 'flex' */ 
+  display: flex;
+}
+
+/* 
+  6. Now write another rule. Its selector should target any 'div' elements inside the class 'contact-details'. 
+     Set the property 'flex' to '1'. This will evenly fill them inside the parent 'contact-details' div.
+*/
+div{
+  flex: 1;
+}
+
+
+/*
+  7. The first paragraph ("Alcazar is...") should look different to other paragraphs.
+
+  **In the HTML editor above**, add a class to the HTML tag for this paragraph. Choose a meaningful name for the class.
+
+  Then, in the CSS editor beneath this comment, write a CSS rule to target this class. In the rule, set some properties:
+
+  The 'font-weight' should be 'bold'.
+  The 'background' should be 'lightgrey'.
+  There should be should some padding around the edge. Pick a value in pixels you like the look of.
+*/
+.description{
+  font-weiht: bold;
+  background: lightgrey;
+  padding: 5px;
+}
+
+
+/*
+  8. Bonus challenge:
+  
+  The table should be striped. The second and fourth rows should have a "lightgrey" background.*/
+#second{
+  backgrounD: lightgrey;
+}
+/*
+  To do this, you will need to write one CSS rule, and add the same class name to two elements in the HTML code.
+
+  Then, write a selector to target that class, and set the background.
+
+  This is the hardest task in the exercise. Do not be alarmed if you find it challenging; it is. If you have successfully made it this far, however, you have all the clues you need to write it.
+
+  When you've finished this task, you've completed the exercise. Keep this window open, and return to FutureLearn. You'll have the opportunity to discuss the exercise, and watch the Lead Educator show their solution to the problem.
+
+  If you'd like to keep your work, click 'export' in the bottom right of this window, and download it as a zip file.
+*/
